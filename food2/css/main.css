@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.whole
+{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,50%)
+}
+
+.first-div
+{
+    background: #f4b848;
+    position: relative;
+}
+.last-div{
+    background: #4cbf4f;
+}
+
+.first-div div{
+    width: 80%;
+    background: white;
+    height: 70vh;
+    margin-top: 15vh;
+    float: right;
+}
+
+.last-div div{
+    width: 80%;
+    background: white;
+    height: 70vh;
+    margin-top: 15vh;
+    float: left;
+}
+
+.first-div nav{
+    height: 80px;
+    line-height: 80px;
+    overflow: hidden;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+nav ul,nav .brand
+{
+    align-self: center;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+nav .brand{
+    margin-left: 3em;
+    color: #f4b848;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav ul
+{
+    list-style: none;
+}
+
+nav ul li
+{
+    display: inline;
+    margin-left: 2em;
+    color: #333;
+}
+
+nav ul li a{
+    color: rgba(0,0,0,0.7);
+}
+
+#wrapper
+{
+    padding-top: 3em;
+    float: left;
+    width: 70%;
+    height: fit-content;
+    margin-left:15%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#wrapper h1
+{
+    font-size: 3.3rem;
+    margin-top: -10rem;
+    height: fit-content;
+}
+
+#wrapper p
+{
+    font-size: 1.1em;
+    margin-top: 0.2em;
+    line-height: 1.5rem;
+    margin-bottom: 0.9em;
+    max-width: 95%;
+    color: rgba(0,0,0,0.8);
+}
+
+#wrapper button
+{
+    width: 50%;
+    height: 40px;
+    padding: 1.2em 0 2.2em ;
+    border: none;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.2em;
+    background: #f4b848;
+}
+
+
+
+div h3
+{
+    text-transform: uppercase;
+    margin-top: 1em;
+}
+
+#hotd
+{
+   margin-top:0.8em;
+   width: 70%;
+   float: left;
+   height: fit-content;
+   margin-left: 15%;
+
+}
+
+#hotd h3 span
+{
+    float: right;
+    cursor: pointer;
+}
+
+#hotd .items
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    height: fit-content;
+    margin-left: 0;
+    margin-top: 1.3em;
+    padding-top: 1em;
+}
+
+#hotd .items .item
+{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    height: fit-content;
+    margin-left: 1em;
+    margin-top: 0;
+    cursor: pointer;
+}
+#hotd .item div
+{
+    height: 100%;
+    margin-top: 0;
+    text-align: center;
+}
+#hotd .item .img
+{
+    padding-right: 10px;
+}
+#hotd .item .detail
+{
+    padding-left: 10px;
+    padding-top: 0.8em;
+
+}
+#hotd .item img
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+/*last section*/
+
+#main-last
+{
+    background: #f4b848 url("../images/item1.jpg");
+    padding: 0;
+    position: relative;
+    background-position: 30% 80%;
+}
+
+#last-header
+{
+    margin: 0;
+    width: 100%;
+    height: fit-content;
+    padding: 1em 0;
+    text-align: right;
+    background: #f4b848;
+}
+
+#last-header button
+{
+    margin-right: 2em;
+    border: none;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    color: #f4b848;
+    background-color: white;
+    border-radius: 0.2em;
+}
+
+#last-header a
+{
+    margin-right: 2em;
+    color: white;
+}
+
+#ratings
+{
+    height: 40%;
+    margin-top: 0;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    background: #f4b848;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2%;
+}
+
+#ratings .rating
+{
+    height: 85%;
+    width: 300px;
+    margin-top: 0;
+    padding: 1em;
+    position: relative;
+}
+
+.rating h5
+{
+    font-size: 1.1em;
+    margin-left: 1em;
+}
+
+.rating span
+{
+    margin-left: 1.5em;
+    color: rgba(0,0,0,0.7);
+}
+
+.rating h2
+{
+    margin-top: 0.5em;
+    font-size: 2em;
+}
+
+.rating p
+{
+    margin-top: 1em;
+    font-size: 0.8em;
+}
+
+b
+{
+    position: absolute;
+    bottom: 1em;
+}
+.rating a
+{
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    color: #f4b848;
+    font-weight: bold;
+    font-size: 1.3em;
+}
