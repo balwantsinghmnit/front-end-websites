@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Searching Now...</h3>
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+            <header>
+                <a href="#">I-Dhaba</a>
+            </header>
+            <h1><span>Health Bhi</span>Swaad Bhi</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias facere eaque vel? Numquam distinctio, totam nesciunt labore eligendi iusto ut!</p>
+            <div class="form-container">
+                <form action="">
+                    <div class="form-left">
+                        <label for="city">Enter Your City:</label>
+                        <input type="text" name="city" id="city">
+                        <p>Example: Jaipur</p>
+                    </div>
+                    <input type="button" value="Find Food Now" id="cta-btn">
+                </form>
+            </div>
+        </section>
+    </div>
+    <section class="authentic">
+        <div class="right-col">
+            <h2>Awesome Great Food</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quibusdam, ipsa pariatur commodi facilis corporis quisquam ipsam similique autem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat iste accusantium facere inventore vitae ad repellendus, voluptatum mollitia quis quo.</p>
+        </div>
+        <img src="images/p1.jpg" alt="A Burger Picture">
+    </section>
+
+    <script>
+        let btn = document.getElementById("cta-btn");
+        let overlay = document.getElementById("overlay");
+        btn.addEventListener('click',()=>{
+            overlay.style.display = "grid";
+            overlay.classList.add("animate-overlay");
+        });
+    </script>
+</body>
+</html>
